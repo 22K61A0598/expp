@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__) 
 @app.route('/') 
 def home(): 
-    return "welcome to the Flask App1go to /register" 
+    return "welcom to /register"
 @app.route('/register', methods=['GET', 'POST']) 
 def register(): 
     if request.method == 'POST': 
@@ -18,4 +18,4 @@ def register():
     return render_template('Register.html') 
  
 if __name__ == '__main__': 
-    app.run(debug=True) 
+    app.run(debug=True)
